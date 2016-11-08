@@ -1,2 +1,2 @@
 # ng-2-course-basic
-Inicial files for the Angular 2 course
+Initial files for the Angular 2 course
