@@ -13,13 +13,15 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var angular2_1 = require("angular2/angular2");
 var ArrayExample = (function () {
     function ArrayExample() {
+        this.time_frames = ['One', 'Two', 'Three', 'Four'];
     }
     ArrayExample = __decorate([
         angular2_1.Component({
             selector: 'array-example'
         }),
         angular2_1.View({
-            template: "<b>Replace with a select element</b>"
+            directives: [angular2_1.NgFor],
+            template: "\n<select>\n  <option *ng-for=\"#time_frame of time_frames\">{{time_frame}} month(s)</option>\n</select>\n"
         }), 
         __metadata('design:paramtypes', [])
     ], ArrayExample);
