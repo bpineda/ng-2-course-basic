@@ -1,0 +1,40 @@
+
+
+<!-- Start Top Bar -->
+    <div class="top-bar">
+      <div class="row">
+        <div class="top-bar-left">
+          <ul class="menu">
+            <li>
+              <a [routerLink]="['/']">
+                Dog
+              </a>
+            </li>
+            <li>
+              <a [routerLink]="['/cat']">
+                Cat
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- End Top Bar -->
+    <br>
+    <main class="row">
+      <router-outlet></router-outlet>
+    </main>
+
+
+    <footer class="row column">
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <hr>
+      <ul class="menu">
+        <li>Examples by </li>
+        <li><a href="https://twitter.com/bpineda">bpineda</a></li>
+      </ul>
+    </footer>
