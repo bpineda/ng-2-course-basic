@@ -1,0 +1,295 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/Cellar/node/6.3.1/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install' ]
+2 info using npm@3.10.3
+3 info using node@v6.3.1
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly install normalizeTree
+8 silly loadCurrentTree Finishing
+9 silly loadIdealTree Starting
+10 silly install loadIdealTree
+11 silly cloneCurrentTree Starting
+12 silly install cloneCurrentTreeToIdealTree
+13 silly cloneCurrentTree Finishing
+14 silly loadShrinkwrap Starting
+15 silly install loadShrinkwrap
+16 silly loadShrinkwrap Finishing
+17 silly loadAllDepsIntoIdealTree Starting
+18 silly install loadAllDepsIntoIdealTree
+19 silly fetchNamedPackageData angular2
+20 silly mapToRegistry name angular2
+21 silly mapToRegistry using default registry
+22 silly mapToRegistry registry https://registry.npmjs.org/
+23 silly mapToRegistry data Result {
+23 silly mapToRegistry   raw: 'angular2',
+23 silly mapToRegistry   scope: null,
+23 silly mapToRegistry   escapedName: 'angular2',
+23 silly mapToRegistry   name: 'angular2',
+23 silly mapToRegistry   rawSpec: '',
+23 silly mapToRegistry   spec: 'latest',
+23 silly mapToRegistry   type: 'tag' }
+24 silly mapToRegistry uri https://registry.npmjs.org/angular2
+25 silly fetchOtherPackageData angular/forms@npm:@angular/forms/bundles/forms.umd.js
+26 silly cache add args [ 'angular/forms@npm:@angular/forms/bundles/forms.umd.js',
+26 silly cache add   null ]
+27 verbose cache add spec angular/forms@npm:@angular/forms/bundles/forms.umd.js
+28 silly fetchNamedPackageData reflect-metadata
+29 silly mapToRegistry name reflect-metadata
+30 silly mapToRegistry using default registry
+31 silly mapToRegistry registry https://registry.npmjs.org/
+32 silly mapToRegistry data Result {
+32 silly mapToRegistry   raw: 'reflect-metadata',
+32 silly mapToRegistry   scope: null,
+32 silly mapToRegistry   escapedName: 'reflect-metadata',
+32 silly mapToRegistry   name: 'reflect-metadata',
+32 silly mapToRegistry   rawSpec: '',
+32 silly mapToRegistry   spec: 'latest',
+32 silly mapToRegistry   type: 'tag' }
+33 silly mapToRegistry uri https://registry.npmjs.org/reflect-metadata
+34 silly fetchNamedPackageData zone.js
+35 silly mapToRegistry name zone.js
+36 silly mapToRegistry using default registry
+37 silly mapToRegistry registry https://registry.npmjs.org/
+38 silly mapToRegistry data Result {
+38 silly mapToRegistry   raw: 'zone.js',
+38 silly mapToRegistry   scope: null,
+38 silly mapToRegistry   escapedName: 'zone.js',
+38 silly mapToRegistry   name: 'zone.js',
+38 silly mapToRegistry   rawSpec: '',
+38 silly mapToRegistry   spec: 'latest',
+38 silly mapToRegistry   type: 'tag' }
+39 silly mapToRegistry uri https://registry.npmjs.org/zone.js
+40 silly cache add parsed spec Result {
+40 silly cache add   raw: 'angular/forms@npm:@angular/forms/bundles/forms.umd.js',
+40 silly cache add   scope: null,
+40 silly cache add   escapedName: null,
+40 silly cache add   name: null,
+40 silly cache add   rawSpec: 'angular/forms@npm:@angular/forms/bundles/forms.umd.js',
+40 silly cache add   spec: '/Applications/MAMP/htdocs/work/bernardopineda.mx/activ.com.mx/ng-2-course-basic/05-forms/form-events/start/angular/forms@npm:@angular/forms/bundles/forms.umd.js',
+40 silly cache add   type: 'local' }
+41 error addLocal Could not install /Applications/MAMP/htdocs/work/bernardopineda.mx/activ.com.mx/ng-2-course-basic/05-forms/form-events/start/angular/forms@npm:@angular/forms/bundles/forms.umd.js
+42 silly fetchPackageMetaData Error: ENOENT: no such file or directory, open '/Applications/MAMP/htdocs/work/bernardopineda.mx/activ.com.mx/ng-2-course-basic/05-forms/form-events/start/angular/forms@npm:@angular/forms/bundles/forms.umd.js'
+42 silly fetchPackageMetaData     at Error (native)
+42 silly fetchPackageMetaData  error for angular/forms@npm:@angular/forms/bundles/forms.umd.js { Error: ENOENT: no such file or directory, open '/Applications/MAMP/htdocs/work/bernardopineda.mx/activ.com.mx/ng-2-course-basic/05-forms/form-events/start/angular/forms@npm:@angular/forms/bundles/forms.umd.js'
+42 silly fetchPackageMetaData     at Error (native)
+42 silly fetchPackageMetaData   errno: -2,
+42 silly fetchPackageMetaData   code: 'ENOENT',
+42 silly fetchPackageMetaData   syscall: 'open',
+42 silly fetchPackageMetaData   path: '/Applications/MAMP/htdocs/work/bernardopineda.mx/activ.com.mx/ng-2-course-basic/05-forms/form-events/start/angular/forms@npm:@angular/forms/bundles/forms.umd.js' }
+43 verbose request uri https://registry.npmjs.org/reflect-metadata
+44 verbose request no auth needed
+45 info attempt registry request try #1 at 10:24:49 AM
+46 verbose request id 04f54dd68f99d52c
+47 verbose etag W/"581ec5a3-6346"
+48 verbose lastModified Sun, 06 Nov 2016 05:54:43 GMT
+49 http request GET https://registry.npmjs.org/reflect-metadata
+50 verbose request uri https://registry.npmjs.org/zone.js
+51 verbose request no auth needed
+52 info attempt registry request try #1 at 10:24:49 AM
+53 verbose etag W/"5836447c-184e4"
+54 verbose lastModified Thu, 24 Nov 2016 01:38:04 GMT
+55 http request GET https://registry.npmjs.org/zone.js
+56 verbose request uri https://registry.npmjs.org/angular2
+57 verbose request no auth needed
+58 info attempt registry request try #1 at 10:24:49 AM
+59 verbose etag W/"583f0fec-1bc4a"
+60 verbose lastModified Wed, 30 Nov 2016 17:44:12 GMT
+61 http request GET https://registry.npmjs.org/angular2
+62 http 304 https://registry.npmjs.org/angular2
+63 verbose headers { date: 'Thu, 01 Dec 2016 16:24:49 GMT',
+63 verbose headers   via: '1.1 varnish',
+63 verbose headers   'cache-control': 'max-age=300',
+63 verbose headers   etag: 'W/"583f0fec-1bc4a"',
+63 verbose headers   age: '0',
+63 verbose headers   connection: 'keep-alive',
+63 verbose headers   'x-served-by': 'cache-dfw1822-DFW',
+63 verbose headers   'x-cache': 'HIT',
+63 verbose headers   'x-cache-hits': '1',
+63 verbose headers   'x-timer': 'S1480609489.837232,VS0,VE32',
+63 verbose headers   vary: 'Accept-Encoding' }
+64 silly get cb [ 304,
+64 silly get   { date: 'Thu, 01 Dec 2016 16:24:49 GMT',
+64 silly get     via: '1.1 varnish',
+64 silly get     'cache-control': 'max-age=300',
+64 silly get     etag: 'W/"583f0fec-1bc4a"',
+64 silly get     age: '0',
+64 silly get     connection: 'keep-alive',
+64 silly get     'x-served-by': 'cache-dfw1822-DFW',
+64 silly get     'x-cache': 'HIT',
+64 silly get     'x-cache-hits': '1',
+64 silly get     'x-timer': 'S1480609489.837232,VS0,VE32',
+64 silly get     vary: 'Accept-Encoding' } ]
+65 verbose etag https://registry.npmjs.org/angular2 from cache
+66 verbose get saving angular2 to /Users/bernardopineda/.npm/registry.npmjs.org/angular2/.cache.json
+67 verbose correctMkdir /Users/bernardopineda/.npm correctMkdir not in flight; initializing
+68 http 304 https://registry.npmjs.org/zone.js
+69 verbose headers { date: 'Thu, 01 Dec 2016 16:24:49 GMT',
+69 verbose headers   via: '1.1 varnish',
+69 verbose headers   'cache-control': 'max-age=300',
+69 verbose headers   etag: 'W/"5836447c-184e4"',
+69 verbose headers   age: '108',
+69 verbose headers   connection: 'keep-alive',
+69 verbose headers   'x-served-by': 'cache-dfw1837-DFW',
+69 verbose headers   'x-cache': 'HIT',
+69 verbose headers   'x-cache-hits': '1',
+69 verbose headers   'x-timer': 'S1480609489.882101,VS0,VE0',
+69 verbose headers   vary: 'Accept-Encoding' }
+70 silly get cb [ 304,
+70 silly get   { date: 'Thu, 01 Dec 2016 16:24:49 GMT',
+70 silly get     via: '1.1 varnish',
+70 silly get     'cache-control': 'max-age=300',
+70 silly get     etag: 'W/"5836447c-184e4"',
+70 silly get     age: '108',
+70 silly get     connection: 'keep-alive',
+70 silly get     'x-served-by': 'cache-dfw1837-DFW',
+70 silly get     'x-cache': 'HIT',
+70 silly get     'x-cache-hits': '1',
+70 silly get     'x-timer': 'S1480609489.882101,VS0,VE0',
+70 silly get     vary: 'Accept-Encoding' } ]
+71 verbose etag https://registry.npmjs.org/zone.js from cache
+72 verbose get saving zone.js to /Users/bernardopineda/.npm/registry.npmjs.org/zone.js/.cache.json
+73 verbose correctMkdir /Users/bernardopineda/.npm correctMkdir not in flight; initializing
+74 http 304 https://registry.npmjs.org/reflect-metadata
+75 verbose headers { date: 'Thu, 01 Dec 2016 16:24:49 GMT',
+75 verbose headers   via: '1.1 varnish',
+75 verbose headers   'cache-control': 'max-age=300',
+75 verbose headers   etag: 'W/"581ec5a3-6346"',
+75 verbose headers   age: '151',
+75 verbose headers   connection: 'keep-alive',
+75 verbose headers   'x-served-by': 'cache-dfw1827-DFW',
+75 verbose headers   'x-cache': 'HIT',
+75 verbose headers   'x-cache-hits': '1',
+75 verbose headers   'x-timer': 'S1480609489.888406,VS0,VE0',
+75 verbose headers   vary: 'Accept-Encoding' }
+76 silly get cb [ 304,
+76 silly get   { date: 'Thu, 01 Dec 2016 16:24:49 GMT',
+76 silly get     via: '1.1 varnish',
+76 silly get     'cache-control': 'max-age=300',
+76 silly get     etag: 'W/"581ec5a3-6346"',
+76 silly get     age: '151',
+76 silly get     connection: 'keep-alive',
+76 silly get     'x-served-by': 'cache-dfw1827-DFW',
+76 silly get     'x-cache': 'HIT',
+76 silly get     'x-cache-hits': '1',
+76 silly get     'x-timer': 'S1480609489.888406,VS0,VE0',
+76 silly get     vary: 'Accept-Encoding' } ]
+77 verbose etag https://registry.npmjs.org/reflect-metadata from cache
+78 verbose get saving reflect-metadata to /Users/bernardopineda/.npm/registry.npmjs.org/reflect-metadata/.cache.json
+79 verbose correctMkdir /Users/bernardopineda/.npm correctMkdir not in flight; initializing
+80 silly resolveWithNewModule reflect-metadata@0.1.2 checking installable status
+81 silly cache add args [ 'reflect-metadata@0.1.2', null ]
+82 verbose cache add spec reflect-metadata@0.1.2
+83 silly cache add parsed spec Result {
+83 silly cache add   raw: 'reflect-metadata@0.1.2',
+83 silly cache add   scope: null,
+83 silly cache add   escapedName: 'reflect-metadata',
+83 silly cache add   name: 'reflect-metadata',
+83 silly cache add   rawSpec: '0.1.2',
+83 silly cache add   spec: '0.1.2',
+83 silly cache add   type: 'version' }
+84 silly addNamed reflect-metadata@0.1.2
+85 verbose addNamed "0.1.2" is a plain semver version for reflect-metadata
+86 silly mapToRegistry name reflect-metadata
+87 silly mapToRegistry using default registry
+88 silly mapToRegistry registry https://registry.npmjs.org/
+89 silly mapToRegistry data Result {
+89 silly mapToRegistry   raw: 'reflect-metadata',
+89 silly mapToRegistry   scope: null,
+89 silly mapToRegistry   escapedName: 'reflect-metadata',
+89 silly mapToRegistry   name: 'reflect-metadata',
+89 silly mapToRegistry   rawSpec: '',
+89 silly mapToRegistry   spec: 'latest',
+89 silly mapToRegistry   type: 'tag' }
+90 silly mapToRegistry uri https://registry.npmjs.org/reflect-metadata
+91 verbose addNameVersion registry:https://registry.npmjs.org/reflect-metadata not in flight; fetching
+92 silly resolveWithNewModule zone.js@0.5.8 checking installable status
+93 silly cache add args [ 'zone.js@0.5.8', null ]
+94 verbose cache add spec zone.js@0.5.8
+95 silly cache add parsed spec Result {
+95 silly cache add   raw: 'zone.js@0.5.8',
+95 silly cache add   scope: null,
+95 silly cache add   escapedName: 'zone.js',
+95 silly cache add   name: 'zone.js',
+95 silly cache add   rawSpec: '0.5.8',
+95 silly cache add   spec: '0.5.8',
+95 silly cache add   type: 'version' }
+96 silly addNamed zone.js@0.5.8
+97 verbose addNamed "0.5.8" is a plain semver version for zone.js
+98 silly mapToRegistry name zone.js
+99 silly mapToRegistry using default registry
+100 silly mapToRegistry registry https://registry.npmjs.org/
+101 silly mapToRegistry data Result {
+101 silly mapToRegistry   raw: 'zone.js',
+101 silly mapToRegistry   scope: null,
+101 silly mapToRegistry   escapedName: 'zone.js',
+101 silly mapToRegistry   name: 'zone.js',
+101 silly mapToRegistry   rawSpec: '',
+101 silly mapToRegistry   spec: 'latest',
+101 silly mapToRegistry   type: 'tag' }
+102 silly mapToRegistry uri https://registry.npmjs.org/zone.js
+103 verbose addNameVersion registry:https://registry.npmjs.org/zone.js not in flight; fetching
+104 silly resolveWithNewModule angular2@2.0.0-alpha.46 checking installable status
+105 silly cache add args [ 'angular2@2.0.0-alpha.46', null ]
+106 verbose cache add spec angular2@2.0.0-alpha.46
+107 silly cache add parsed spec Result {
+107 silly cache add   raw: 'angular2@2.0.0-alpha.46',
+107 silly cache add   scope: null,
+107 silly cache add   escapedName: 'angular2',
+107 silly cache add   name: 'angular2',
+107 silly cache add   rawSpec: '2.0.0-alpha.46',
+107 silly cache add   spec: '2.0.0-alpha.46',
+107 silly cache add   type: 'version' }
+108 silly addNamed angular2@2.0.0-alpha.46
+109 verbose addNamed "2.0.0-alpha.46" is a plain semver version for angular2
+110 silly mapToRegistry name angular2
+111 silly mapToRegistry using default registry
+112 silly mapToRegistry registry https://registry.npmjs.org/
+113 silly mapToRegistry data Result {
+113 silly mapToRegistry   raw: 'angular2',
+113 silly mapToRegistry   scope: null,
+113 silly mapToRegistry   escapedName: 'angular2',
+113 silly mapToRegistry   name: 'angular2',
+113 silly mapToRegistry   rawSpec: '',
+113 silly mapToRegistry   spec: 'latest',
+113 silly mapToRegistry   type: 'tag' }
+114 silly mapToRegistry uri https://registry.npmjs.org/angular2
+115 verbose addNameVersion registry:https://registry.npmjs.org/angular2 not in flight; fetching
+116 verbose get https://registry.npmjs.org/reflect-metadata not expired, no request
+117 verbose get https://registry.npmjs.org/zone.js not expired, no request
+118 verbose get https://registry.npmjs.org/angular2 not expired, no request
+119 silly cache afterAdd reflect-metadata@0.1.2
+120 verbose afterAdd /Users/bernardopineda/.npm/reflect-metadata/0.1.2/package/package.json not in flight; writing
+121 verbose correctMkdir /Users/bernardopineda/.npm correctMkdir not in flight; initializing
+122 silly cache afterAdd zone.js@0.5.8
+123 verbose afterAdd /Users/bernardopineda/.npm/zone.js/0.5.8/package/package.json not in flight; writing
+124 verbose correctMkdir /Users/bernardopineda/.npm correctMkdir not in flight; initializing
+125 silly cache afterAdd angular2@2.0.0-alpha.46
+126 verbose afterAdd /Users/bernardopineda/.npm/angular2/2.0.0-alpha.46/package/package.json not in flight; writing
+127 verbose correctMkdir /Users/bernardopineda/.npm correctMkdir not in flight; initializing
+128 verbose afterAdd /Users/bernardopineda/.npm/zone.js/0.5.8/package/package.json written
+129 verbose afterAdd /Users/bernardopineda/.npm/reflect-metadata/0.1.2/package/package.json written
+130 verbose afterAdd /Users/bernardopineda/.npm/angular2/2.0.0-alpha.46/package/package.json written
+131 silly rollbackFailedOptional Starting
+132 silly rollbackFailedOptional Finishing
+133 silly runTopLevelLifecycles Starting
+134 silly runTopLevelLifecycles Finishing
+135 silly install printInstalled
+136 verbose stack Error: ENOENT: no such file or directory, open '/Applications/MAMP/htdocs/work/bernardopineda.mx/activ.com.mx/ng-2-course-basic/05-forms/form-events/start/angular/forms@npm:@angular/forms/bundles/forms.umd.js'
+136 verbose stack     at Error (native)
+137 verbose cwd /Applications/MAMP/htdocs/work/bernardopineda.mx/activ.com.mx/ng-2-course-basic/05-forms/form-events/start
+138 error Darwin 16.1.0
+139 error argv "/usr/local/Cellar/node/6.3.1/bin/node" "/usr/local/bin/npm" "install"
+140 error node v6.3.1
+141 error npm  v3.10.3
+142 error path /Applications/MAMP/htdocs/work/bernardopineda.mx/activ.com.mx/ng-2-course-basic/05-forms/form-events/start/angular/forms@npm:@angular/forms/bundles/forms.umd.js
+143 error code ENOENT
+144 error errno -2
+145 error syscall open
+146 error enoent ENOENT: no such file or directory, open '/Applications/MAMP/htdocs/work/bernardopineda.mx/activ.com.mx/ng-2-course-basic/05-forms/form-events/start/angular/forms@npm:@angular/forms/bundles/forms.umd.js'
+147 error enoent ENOENT: no such file or directory, open '/Applications/MAMP/htdocs/work/bernardopineda.mx/activ.com.mx/ng-2-course-basic/05-forms/form-events/start/angular/forms@npm:@angular/forms/bundles/forms.umd.js'
+147 error enoent This is most likely not a problem with npm itself
+147 error enoent and is related to npm not being able to find a file.
+148 verbose exit [ -2, true ]

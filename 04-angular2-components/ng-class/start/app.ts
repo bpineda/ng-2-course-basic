@@ -6,6 +6,7 @@ import {
   NgSwitch,
   NgSwitchWhen, 
   NgSwitchDefault,
+  NgClass,
   bootstrap,
 } from "angular2/angular2";
 
