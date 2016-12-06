@@ -1,0 +1,10 @@
+<h3>GitHub</h3>
+<button type="button" (click)="makeRequest()">GET USER DATA</button>
+<!--<pre>{{data | json}}</pre>-->
+<ul>
+  <li *ngFor="let user of data">
+            <img width="50" [src]="user.avatar_url" /><a href="#" [routerLink]="['/posts']">
+          {{user.login}}
+          </a>
+        </li>
+</ul>
