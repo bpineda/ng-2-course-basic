@@ -1,24 +1,36 @@
 <div class="medium-12 large-12 columns">
-    <h3>Form examples</h3>
-    <p>There is nothing wrong with template driven forms, but from a programming technique point of view bi-directional binding is a solution that promotes mutability.</p>
-    <p>Each form has a state that can be updated by many different interactions and its up to the application developer to manage that state and prevent it from getting corrupted. This can get hard to do for very large forms and can introduce a category of potential bugs.</p>
-    <p>Again its important to realize that this only happens in very large / complex forms. Angular does provides a different alternative for managing forms, so let's go through it.</p>
-    <label>
-      Size
-      <select>
-        <option value="husker">Small</option>
-        <option value="starbuck">Medium</option>
-        <option value="hotdog">Large</option>
-        <option value="apollo">Yeti</option>
-      </select>
-    </label>
+    <h3>Template-Driven Form</h3>
+    <form>
     <div class="row">
-      <div class="small-3 columns">
-        <label for="middle-label" class="middle">Quantity</label>
+      <div class="small-2 columns">
+        <label for="middle-label" class="middle">Full Name</label>
       </div>
-      <div class="small-9 columns">
-        <input type="text" id="middle-label" placeholder="One fish two fish">
+      <div class="small-10 columns">
+        <input type="text" id="middle-label" placeholder="John Doe">
       </div>
     </div>
-    <a href="#" class="button large expanded">Buy Now</a>
+    <div class="row">
+      <div class="small-2 columns">
+        <label for="middle-label" class="middle">Email</label>
+      </div>
+      <div class="small-10 columns">
+        <input type="text" id="middle-label" placeholder="user@domain.com">
+      </div>
+    </div>
+    <div class="row">
+      <div class="small-2 columns">
+        <label for="middle-label" class="middle">Password</label>
+      </div>
+      <div class="small-10 columns">
+        <input type="password" id="middle-label" placeholder="$123A">
+      </div>
+    </div>
+    <div class="row">
+      <div class="small-12 columns">
+        <input class="button hollow" type="submit" value="SEND" />
+        <a href="#" class="button success hollow">CLEAR</a>
+      </div>
+    </div>
+    </form>
+    
 </div>
