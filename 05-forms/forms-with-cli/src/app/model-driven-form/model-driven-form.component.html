@@ -1,12 +1,19 @@
 <div class="medium-12 large-12 columns">
     <h3>Model-Driven Form</h3>
-    <form>
+    <form [formGroup]="form" (ngSubmit)="onSubmit()">
     <div class="row">
       <div class="small-2 columns">
         <label for="middle-label" class="middle">Full Name</label>
       </div>
       <div class="small-10 columns">
-        <input type="text" id="middle-label" placeholder="John Doe">
+        <input type="text" id="middle-label" placeholder="John Doe"
+          formControlName="fullName"
+        >
+        <div class="callout warning" 
+          [hidden]="form.controls.fullName.valid || form.controls.fullName.pristine"
+        >
+          <p>Name is invalid</p>
+        </div>
       </div>
     </div>
     <div class="row">
@@ -14,7 +21,9 @@
         <label for="middle-label" class="middle">Email</label>
       </div>
       <div class="small-10 columns">
-        <input type="text" id="middle-label" placeholder="user@domain.com">
+        <input type="text" id="middle-label" placeholder="user@domain.com"
+          formControlName="email"
+        >
       </div>
     </div>
     <div class="row">
@@ -22,15 +31,21 @@
         <label for="middle-label" class="middle">Password</label>
       </div>
       <div class="small-10 columns">
-        <input type="password" id="middle-label" placeholder="$123A">
+        <input type="password" id="middle-label" placeholder="$123A"
+          formControlName="password"
+        >
       </div>
     </div>
     <div class="row">
       <div class="small-12 columns">
-        <input class="button hollow" type="submit" value="SEND" />
-        <a class="button success hollow">CLEAR</a>
+        <input class="button hollow" [disabled]="!form.valid" type="submit" value="SEND" />
       </div>
     </div>
     </form>
+    <button class="button hollow success" (click)="onClickPatch()">Patch</button>
+        <button class="button hollow secondary" (click)="onClickSetValue()">SetValue</button>
+        <button class="button hollow warning" (click)="onClickReset()">Reset</button>
+        <p>Valid form: {{ form.valid }}</p>
+        <p>Name: {{ fullName.value }}</p>
     
 </div>

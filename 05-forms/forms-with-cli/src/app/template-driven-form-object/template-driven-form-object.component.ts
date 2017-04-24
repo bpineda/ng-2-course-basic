@@ -7,9 +7,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TemplateDrivenFormObjectComponent implements OnInit {
 
+  user: Object= { fullName: 'Bernardo', email:'_@bernardopineda.mx', password: '12345' };
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  onSubmitTemplateBased()
+  {
+    console.log(this);
+    console.log(this.user);
+  }
+
+  onClickClear()
+  {
+    this['email'] = '';
+    this['fullName'] = '';
+    this['password'] = '';
   }
 
 }

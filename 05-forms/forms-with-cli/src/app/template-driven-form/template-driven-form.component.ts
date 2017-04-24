@@ -12,4 +12,17 @@ export class TemplateDrivenFormComponent implements OnInit {
   ngOnInit() {
   }
 
+  onSubmitTemplateBased()
+  {
+    console.log(this);
+    console.log(this['email']);
+  }
+
+  onClickClear()
+  {
+    this['email'] = '';
+    this['fullName'] = '';
+    this['password'] = '';
+  }
+
 }

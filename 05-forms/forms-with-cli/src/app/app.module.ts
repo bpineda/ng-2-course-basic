@@ -1,6 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+
 import { FormsModule } from '@angular/forms';
+import {ReactiveFormsModule} from "@angular/forms";
+
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
@@ -9,6 +12,8 @@ import { TemplateDrivenFormComponent } from './template-driven-form/template-dri
 import { TemplateDrivenFormObjectComponent } from './template-driven-form-object/template-driven-form-object.component';
 import { ModelDrivenFormComponent } from './model-driven-form/model-driven-form.component';
 import { HomeComponent } from './home/home.component';
+import 'rxjs/add/operator/map';
+import 'rxjs/Rx';
 
 @NgModule({
   declarations: [
@@ -21,6 +26,7 @@ import { HomeComponent } from './home/home.component';
   imports: [
     BrowserModule,
     FormsModule,
+    ReactiveFormsModule,
     HttpModule,
     AppRoutingModule
   ],
