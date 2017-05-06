@@ -31,11 +31,11 @@
     </tr>
   </thead>
   <tbody>
-    <tr *ngFor="let user of users">
-      <td><img [src]="user.avatar_url" width="100" /></td>
-      <td>{{user.login}}</td>
-      <td><a [href]="user.html_url">{{user.html_url}}</a></td>
-      <td><a class="button hollow" (click)="onClickShowDetails(user.login)">VIEW DETAILS</a></td>
+    <tr>
+      <td>Avatar URL</td>
+      <td>Login</td>
+      <td>HTML URL</a></td>
+      <td><a class="button hollow">VIEW DETAILS</a></td>
     </tr>
   </tbody>
 </table>
