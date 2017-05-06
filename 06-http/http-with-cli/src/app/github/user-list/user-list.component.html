@@ -1,6 +1,6 @@
 <div class="medium-12 large-12 columns">
     <h3>Simple HTTP call</h3>
-    <form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <form [formGroup]="form">
     <div class="row">
       <div class="small-2 columns">
         <label for="middle-label" class="middle">User Name</label>
@@ -15,8 +15,8 @@
       </div>
     </div>
     <div class="row">
-      <div class="small-12 columns">
-        <input class="button hollow success"  type="submit" value="SEARCH" [disabled]="!form.valid" />
+      <div class="small-12 columns" hidden>
+        <input  class="button hollow success"  type="submit" value="SEARCH" (click)="onSubmit()" [disabled]="!form.valid" />
       </div>
     </div>
     </form>
@@ -32,10 +32,12 @@
   </thead>
   <tbody>
     <tr *ngFor="let user of users">
-      <td><img [src]="user.avatar_url" width="100" /></td>
+      <td><img width="200" [src]="user.avatar_url"  /></td>
       <td>{{user.login}}</td>
-      <td><a [href]="user.html_url">{{user.html_url}}</a></td>
-      <td><a class="button hollow" (click)="onClickShowDetails(user.login)">VIEW DETAILS</a></td>
+      <td><a>{{user.html_url}}</a></td>
+      <td><a class="button hollow" 
+              (click)="onClickShowDetails(user.login)" >
+        Action</a></td>
     </tr>
   </tbody>
 </table>

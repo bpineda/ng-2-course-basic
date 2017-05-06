@@ -2,8 +2,8 @@ import { NgModule }             from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { HomeComponent } from './home/home.component';
-import { UserProfileComponent } from './github/user-profile/user-profile.component';
 import { UserListComponent } from './github/user-list/user-list.component';
+import { UserDetailsComponent } from './github/user-details/user-details.component';
 
 const appRoutes: Routes = [
   {
@@ -11,12 +11,12 @@ const appRoutes: Routes = [
     component: HomeComponent
   },
   {
-    path: 'github',
-    component: UserListComponent
+    path: 'github/user/:username',
+    component: UserDetailsComponent
   },
   {
-    path: 'github/user/:username',
-    component: UserProfileComponent
+    path: 'github',
+    component: UserListComponent
   },
   { path: '',   redirectTo: '/home', pathMatch: 'full' },
   { path: '**', component: HomeComponent }

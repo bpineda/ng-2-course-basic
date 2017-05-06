@@ -1,6 +1,6 @@
+import { GithubService } from '../shared/github.service';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { GithubService } from '../shared/github.service';
 import {  FormGroup, 
           FormControl, 
           Validators, 
@@ -19,36 +19,62 @@ export class UserListComponent implements OnInit {
   userName = new FormControl("", [ Validators.required ]);
   users: any = [];
 
-  constructor(private router: Router, private github: GithubService, form_builder: FormBuilder) { 
-    console.log( this.github.getUserName() );
+  constructor(  private router:Router, 
+                private github: GithubService,
+                form_builder: FormBuilder
+                ) { 
+    
     this.form = form_builder.group({
       "userName": this.userName
     });
+
+    this.form.patchValue({ userName: github.username });
+    this.users = this.github.searchResults;
+
+    
+
   }
 
-  searchForUser(username: string) {
-    
-    this.github.searchUsers(username)
-          .subscribe(userDetails => {
-            console.log('Response');
-            console.log(userDetails);
-            this.users = userDetails.items;
-          });
+  searchForUser( search_string: string )
+  {
+    this.github.searchUsers(search_string)
+        .subscribe(
+          userDetails => {
+            console.log('GitHub Response:', userDetails);
+            this.users = userDetails['items'];
+            this.github.searchResults = userDetails['items'];
+          }
+        );
   }
 
   onSubmit()
   {
-    this.searchForUser( this.userName.value );
+    this.searchForUser(this.userName.value);
   }
 
   onClickShowDetails( selected_username: string )
   {
-    alert(selected_username);
-    this.github.setUserName( selected_username );
-    this.router.navigate(['/github/user', selected_username]);
+    //alert(selected_username);
+    this.github.username = this.userName.value;
+    this.router.navigate( ['/github/user', selected_username ] );
   }
-
+  
   ngOnInit() {
+    console.log('ngOnInit');
+    this.form.get('userName').valueChanges
+        .debounceTime(500)
+        .do(
+          changes => {
+            console.log('Value changes:', changes);
+            if( this.form.valid )
+            {
+              this.searchForUser(changes);
+            }
+            
+          }
+        )
+        .subscribe()
+        ;
   }
 
 }
